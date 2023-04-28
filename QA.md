@@ -176,7 +176,8 @@ print(b)
 
    因此，SVM和深度学习各有优缺点，应根据具体的应用场景选择适合的模型。
 
-6. Q：Transformer中的全连接层为什么说是Position-wiseA： Transformer中的全连接层被称为Position-wise Feedforward Networks，因为这一层的每个神经元都只和输入张量中的同一位置的神经元相连。这意味着，该层对每个位置的特征进行独立的处理，而不考虑其他位置的信息。因此，该层被称为“Position-wise”，因为它在处理每个位置的特征时，只考虑该位置本身的信息，而不考虑其他位置的信息。 
+6. Q：Transformer中的全连接层为什么说是Position-wise
+   A： Transformer中的全连接层被称为Position-wise Feedforward Networks，因为这一层的每个神经元都只和输入张量中的同一位置的神经元相连。这意味着，该层对每个位置的特征进行独立的处理，而不考虑其他位置的信息。因此，该层被称为“Position-wise”，因为它在处理每个位置的特征时，只考虑该位置本身的信息，而不考虑其他位置的信息。 
 
    Q： 如何实现的position-wise 
 
@@ -328,12 +329,6 @@ print(b)
 12. 
 
 13. 
-
-
-
-
-
-
 
 
 
