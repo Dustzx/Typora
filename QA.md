@@ -320,15 +320,31 @@ print(b)
 
    A：是的，这个架构可以看作是一个Encoder-Linear的生成式架构。Encoder部分使用了`nn.TransformerEncoder`对历史症状-属性序列进行编码，然后将编码后的向量作为输入送入全连接层（`nn.Linear`）中，用于预测目标症状。由于只使用了一个全连接层，因此可以将这个模型看作是一个线性生成模型。
 
-9. 
+9. Q：model.train()和model.eval()作用是什么
 
-10. 
+   A：在PyTorch中，`model.train()`和`model.eval()`方法是用于设置模型的训练状态和评估状态的方法。
+
+   `model.train()`方法用于将模型设置为训练状态，这意味着模型会启用一些特定于训练的功能，例如Dropout和Batch Normalization。在训练过程中，我们需要使用这些功能来防止模型过度拟合，并提高模型的泛化能力。因此，在每次进行训练之前，我们需要将模型设置为训练状态，以便在训练过程中正确地使用这些功能。
+
+   `model.eval()`方法用于将模型设置为评估状态，这意味着模型会禁用一些特定于训练的功能，例如Dropout和Batch Normalization。在评估过程中，我们需要对模型进行测试，并获得其在测试数据集上的性能指标。由于我们不希望在测试过程中使用Dropout和Batch Normalization等功能，因此我们需要将模型设置为评估状态。
+
+   需要注意的是，在使用`model.eval()`方法之前，通常需要先调用`torch.no_grad()`方法来禁用自动求导功能，以避免在评估过程中计算不必要的梯度信息。
+
+10. Q： Because the proposed architecture, in a sense, imitates the logic of decision-making by physicians in real life (additional cyclic tests until the diagnosis is certain), the proposed framework can be considered as one of the variants of logic regularization 为什么模拟了医生的决策就可以称为是逻辑正则化的变体 
+
+    A：逻辑正则化是一种用于提高机器学习模型可解释性和泛化性能的技术，其主要思想是通过约束模型的决策逻辑来避免过拟合和提高泛化性能。而在上述文本中，提到的模型架构通过模拟医生的决策过程，引入了额外的循环测试，直到诊断结果确定，这种设计与逻辑正则化的思想是相似的。
+
+    具体来说，医生在诊断病人时，通常会进行多次测试和观察，直到确定诊断结果。这种决策逻辑可以被视为一种规则或约束，即在进行诊断时需要遵循某种逻辑流程。而模拟这种决策逻辑，可以看作是对模型进行了一定的约束和规范，从而避免了过拟合和提高了泛化性能。因此，可以将这种模拟医生决策的模型架构视为逻辑正则化的一种变体。
+
+    总之，因为模拟了医生的决策过程，并引入了额外的循环测试来确定诊断结果，所以可以将该模型架构视为逻辑正则化的一种变体。
 
 11. 
 
 12. 
 
 13. 
+
+14. 
 
 
 

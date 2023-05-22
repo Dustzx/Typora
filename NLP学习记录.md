@@ -403,6 +403,8 @@ https://m.yisu.com/zixun/724824.html
 
 nvcc --version 
 
+nvidia-smi 
+
 ###### LaTex
 
 https://blog.csdn.net/haohaoxuexi010/article/details/110912833
@@ -690,6 +692,24 @@ Their weaknesses are the difficulty of developing and training such systems and 
 The policy learning of RL tries to learn which symptom inquiry improves the rewards but not the doctor’s diagnostic logic directly. As a result, RL relies on the random trials to learn how to improve the reward, but don’t learn directly the correlation among symptoms and the standard diagnosis paradigm. —— Diaformer
 
 并且RL目前没有一个理想的reward函数，来使得模型能平衡症状询问、疾病诊断两个功能
+
+## GNN/GCN
+
+**A GNN is an <u>optimizable transformation</u> on all attributes of the graph (nodes, edges, global-context) that preserves graph symmetries (permutation invariances).**
+
+GNN是作用在图上所有信息的可优化的转换，该转换可以保持图的对称信息 (具有修改顺序不变性)
+
+![1684417466473](NLP学习记录.assets/1684417466473.png)
+
+简单的GNN在做预测时，单独将vertex、edge、global放入对应的MLP，看不到边与顶点之间的相关信息
+
+增加了对其他信息的汇聚后即下图
+
+![1684417545937](NLP学习记录.assets/1684417545937.png)
+
+在做汇聚时进行的不同操作各有优劣，下图举例Max、Mean不同情况不具有区分度的情况。(是否可以计算Max、Mean、Sum后求和再平均即$mean(sum(Max(),Mean(),Sum()))$   )
+
+![1684417603634](NLP学习记录.assets/1684417603634.png)
 
 ## NLP学习记录
 

@@ -1,3 +1,13 @@
+
+Furthermore, different diseases require a different amount of evidence to make a reliable conclusion, as some diseases are more ambiguous than others. 
+
+Ls is the Asymmetric loss [13] designed for multilabel classification to mitigate the data skewness towards particular classes
+to mitigate the data skewness towards particular classes
+减轻对特定类的数据偏倚
+
+The proposed architecture, in which the predictions of the first submodel
+are fed to the input of the second submodel and the gradients from the second submodel are propagated to the first submodel, is an attempt to encapsulate both approaches within a single architecture and take advantage of the benefits of each. 
+------------------------
 ChatDoctor
 been tailored to
 However, such language models have not been tailored to the medical domain, resulting in poor answer accuracy and inability to give plausible recommendations for medical diagnosis, medications, etc.
