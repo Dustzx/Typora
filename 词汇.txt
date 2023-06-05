@@ -1,3 +1,50 @@
+medical-related
+
+mouth ulcers 口腔溃疡
+ischemic 缺血性的
+respiratory system 呼吸系统
+endocrine system 内分泌系统
+pediatric department 儿科
+allergic rhinitis 过敏性鼻炎
+rhinitis 鼻炎
+pneumonia 肺炎
+pre-examination 预检 triage 分诊
+gastroenterology 肠胃病学
+dermatology 皮肤病学
+bronchi支气管 bronchitis支气管炎 
+heart failure 心力衰竭
+upper respiratory infection 上呼吸道感染
+ dyspepsia消化不良
+pediatric/infantile diarrhea 幼儿腹泻
+type 2 diabetes 二型糖尿病
+autism spectrum disorders 孤独症谱系障碍
+diarrhea 腹泻
+合成
+synthesis of properly empathetic speech
+AGI即Artificial general intelligence 通用人工智能
+----------------------------------------------
+Symptoms are known by their companies
+
+
+probable大概的
+They hypothesize a set of probable diseases based on extracted symptoms and first inspects the potential symptoms of these candidate diseases. 
+substantially impact潜在地影响到
+A single irrelevant symptom request can substantially impact patients’ trust in the system
+ever-growing 日益增长的
+With the motivation of assisting doctors and utilizing their time efficiently, automatic disease diagnosis using artificial intelligence is experiencing an ever-growing demand and popularity
+ongoing持续存在的
+The proposed A-SIDDA converses with patients and extracts signs and symptoms as per patients，chief complaints and ongoing dialogue context.
+paramount concern 	重要的问题
+Thus, in addition to the final outcome (diagnosis accuracy), the diagnosis assistant’s behavior with patients is also a paramount concern.
+---------------------------------------------
+End-to-End Knowledge-Routed Relational Dialogue System for Automatic Diagnosis
+
+However, the dialogue system for medical diagnosis poses stringent requirements not only on the dialogue rationality in the context of medical knowledge but the comprehension of symptom-disease relations.
+然而，医学诊断对话系统不仅对医学知识背景下的对话合理性提出了严格的要求，而且对症状-疾病关系的理解也提出了严格的要求。
+
+
+-------------------------------------------------------
+NeuralSympCheck
 
 Furthermore, different diseases require a different amount of evidence to make a reliable conclusion, as some diseases are more ambiguous than others. 
 
@@ -409,27 +456,4 @@ predominantly outperforms 压倒性地胜于
 
 ……，highlighting the promising practical value of adapting super-large PLMs.
 体现了调节大规模预训练语言模型的实验前景
------------------------------
-medical-related
 
-ischemic 缺血性的
-respiratory system 呼吸系统
-endocrine system 内分泌系统
-pediatric department 儿科
-allergic rhinitis 过敏性鼻炎
-rhinitis 鼻炎
-pneumonia 肺炎
-pre-examination 预检 triage 分诊
-gastroenterology 肠胃病学
-dermatology 皮肤病学
-bronchi支气管 bronchitis支气管炎 
-heart failure 心力衰竭
-upper respiratory infection 上呼吸道感染
- dyspepsia消化不良
-pediatric/infantile diarrhea 幼儿腹泻
-type 2 diabetes 二型糖尿病
-autism spectrum disorders 孤独症谱系障碍
-diarrhea 腹泻
-合成
-synthesis of properly empathetic speech
-AGI即Artificial general intelligence 通用人工智能
